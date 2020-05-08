@@ -13118,61 +13118,6 @@ Using the features which produced the best clusters, create a model to predict l
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Our Conclusion&#39;</span><span class="p">)</span>
-<span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">on_button_clicked</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
-      <span class="c1"># &quot;linking function with output&quot;</span>
-      <span class="k">with</span> <span class="n">out</span><span class="p">:</span>
-          <span class="c1"># what happens when we press the button</span>
-          <span class="n">clear_output</span><span class="p">()</span>
-          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hypothesis and conclusion is unclear.&#39;</span><span class="p">)</span>
-          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Our derived variables proved useful, but not significantly.&#39;</span><span class="p">)</span>
-          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The &quot;best&quot; performing model was a decision tree.&#39;</span><span class="p">)</span>
-<span class="c1"># linking button and function together using a button&#39;s method</span>
-<span class="n">button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button_clicked</span><span class="p">)</span>
-<span class="c1"># displaying button and its output together</span>
-<span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">button</span><span class="p">,</span><span class="n">out</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="bee79caf-4c11-4249-a7ed-108d1ee02b2a"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#bee79caf-4c11-4249-a7ed-108d1ee02b2a');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "493bd6b6f14245b292812bad23b2406a", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13247,6 +13192,61 @@ var element = $('#bee79caf-4c11-4249-a7ed-108d1ee02b2a');
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Our Conclusion&#39;</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">on_button_clicked</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+      <span class="c1"># &quot;linking function with output&quot;</span>
+      <span class="k">with</span> <span class="n">out</span><span class="p">:</span>
+          <span class="c1"># what happens when we press the button</span>
+          <span class="n">clear_output</span><span class="p">()</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hypothesis and conclusion is unclear.&#39;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Our derived variables proved useful, but not significantly.&#39;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The &quot;best&quot; performing model was a decision tree.&#39;</span><span class="p">)</span>
+<span class="c1"># linking button and function together using a button&#39;s method</span>
+<span class="n">button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button_clicked</span><span class="p">)</span>
+<span class="c1"># displaying button and its output together</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">button</span><span class="p">,</span><span class="n">out</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="58026af7-731d-4eef-86c8-fb6cbe32565b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#58026af7-731d-4eef-86c8-fb6cbe32565b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "493bd6b6f14245b292812bad23b2406a", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
 </div>
 </div>
 
