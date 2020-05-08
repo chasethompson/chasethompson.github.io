@@ -13118,24 +13118,60 @@ Using the features which produced the best clusters, create a model to predict l
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>button = widgets.Button(description='My Button')
-out = widgets.Output()
-def on_button<em>clicked(</em>):</p>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Our Conclusion&#39;</span><span class="p">)</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">on_button_clicked</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+      <span class="c1"># &quot;linking function with output&quot;</span>
+      <span class="k">with</span> <span class="n">out</span><span class="p">:</span>
+          <span class="c1"># what happens when we press the button</span>
+          <span class="n">clear_output</span><span class="p">()</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hypothesis and conclusion is unclear.&#39;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Our derived variables proved useful, but not significantly.&#39;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The &quot;best&quot; performing model was a decision tree.&#39;</span><span class="p">)</span>
+<span class="c1"># linking button and function together using a button&#39;s method</span>
+<span class="n">button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button_clicked</span><span class="p">)</span>
+<span class="c1"># displaying button and its output together</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">button</span><span class="p">,</span><span class="n">out</span><span class="p">])</span>
+</pre></div>
 
-<pre><code>  # "linking function with output"
-  with out:
-      # what happens when we press the button
-      clear_output()
-      print('Something happens!')
-</code></pre>
-<h1 id="linking-button-and-function-together-using-a-button's-method">linking button and function together using a button's method<a class="anchor-link" href="#linking-button-and-function-together-using-a-button's-method">&#182;</a></h1><p>button.on_click(on_button_clicked)</p>
-<h1 id="displaying-button-and-its-output-together">displaying button and its output together<a class="anchor-link" href="#displaying-button-and-its-output-together">&#182;</a></h1><p>widgets.VBox([button,out])</p>
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="bee79caf-4c11-4249-a7ed-108d1ee02b2a"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#bee79caf-4c11-4249-a7ed-108d1ee02b2a');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "493bd6b6f14245b292812bad23b2406a", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13147,7 +13183,7 @@ def on_button<em>clicked(</em>):</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ignore warnings</span>
@@ -13203,6 +13239,11 @@ def on_button<em>clicked(</em>):</p>
 
 <span class="c1"># view full DF</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># some handy functions to use along widgets</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">clear_output</span>
+<span class="c1"># widget packages</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 </pre></div>
 
     </div>
